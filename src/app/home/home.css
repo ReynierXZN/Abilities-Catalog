@@ -1,0 +1,60 @@
+/* Home Page Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #162447); /* dark gradient but softer */
+    margin: 0;
+    padding: 0;
+    color: #ffffff; /* default text color */
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.card {
+    background-color: #2a2a3e; /* slightly lighter dark card */
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    max-width: 700px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+}
+
+.card-text {
+    font-size: 16pt;
+    line-height: 1.6;
+    color: #f0f0f0; /* brighter for readability */
+}
+
+.card-text span {
+    color: #ff4655; /* Valorant red accent */
+    font-weight: bold;
+    font-size: 20pt;
+}
+
+.card-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 14pt;
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: #ff4655;
+    color: #ffffff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card-link:hover {
+    background-color: #e03e4c;
+    transform: translateY(-2px);
+}

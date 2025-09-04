@@ -1,0 +1,26 @@
+<div class="table-wrapper">
+  <table class="valorant-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Location</th>
+        <th>Details</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products; let i = index">
+        <td>{{ product.id }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.price }}</td>
+        <td>{{ product.location }}</td>
+        <td>{{ product.details }}</td>
+        <td>
+          <a class="btn-details" [routerLink]="['/details', product.id]">View Details</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

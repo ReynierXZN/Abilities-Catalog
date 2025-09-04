@@ -1,0 +1,51 @@
+.details-card {
+  max-width: 400px;
+  margin: 3rem auto;
+  background: #1e1e2f; /* Valorant dark */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(255, 70, 85, 0.4);
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.details-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(255, 70, 85, 0.6);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff4655; /* Valorant red */
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.card-info p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.card-info strong {
+  color: #ffa3a9; /* lighter red accent */
+}
+
+.btn.go-back {
+  display: block;
+  text-align: center;
+  margin: 1.5rem auto 0;
+  padding: 0.6rem 1.5rem;
+  background-color: #ff4655;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn.go-back:hover {
+  background-color: #ffa3a9;
+  transform: translateY(-2px);
+}

@@ -1,0 +1,93 @@
+/* Global wrapper with flex layout */
+.app-wrapper {
+  display: flex;
+  min-height: 100vh;
+  background-color: #12121f; /* dark base */
+}
+
+/* Side panels */
+.side {
+  width: 60px;
+  background: linear-gradient(180deg, #ff4655 0%, #1e1e2f 100%);
+}
+
+/* Optional glowing effect */
+.side::after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 20px #ff4655;
+  opacity: 0.3;
+}
+
+/* Main content area */
+.main-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar styling */
+.navbar {
+  width: 100%;
+  background-color: #1e1e2f;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+  color: #ff4655;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-brand:hover {
+  color: #ffa3a9;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #ff4655;
+  transform: translateY(-2px);
+}
+
+.nav-link.active {
+  color: #ff4655;
+  border-bottom: 2px solid #ff4655;
+}
+
+/* Main router content */
+.content {
+  flex: 1;
+  padding: 2rem;
+  color: #f0f0f0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .side {
+    display: none; /* hide side panels on small screens */
+  }
+}
